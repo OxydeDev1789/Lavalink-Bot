@@ -15,7 +15,7 @@ module.exports = {
         
         let queueLength = player.queue.length
     
-        player.queue.clear();
+        await player.queue.clear();
         
         const embed = new EmbedBuilder()
         .setTitle("Successfully cleared the queue!")
